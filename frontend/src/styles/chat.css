@@ -1,0 +1,345 @@
+/* ==========================
+   Chat Page
+========================== */
+
+.chat-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+/* ==========================
+   Chat Box
+========================== */
+
+.chat-box{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:80vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:28px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   Header
+========================== */
+
+.chat-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+.chat-header h2{
+
+    color:var(--text);
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    margin-bottom:4px;
+
+}
+
+.chat-header span{
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+}
+
+/* ==========================
+   Connection Status
+========================== */
+
+.status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#4ADE80;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#4ADE80;
+
+    animation:pulse 1.6s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.5);
+
+        opacity:.55;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================
+   Message List
+========================== */
+
+.message-list{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin:20px 0;
+
+    padding-right:6px;
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================
+   Empty Chat
+========================== */
+
+.empty-chat{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   Input Area
+========================== */
+
+.chat-input-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.chat-input-container input{
+
+    flex:1;
+
+}
+
+.chat-input-container button{
+
+    width:140px;
+
+    height:52px;
+
+    flex-shrink:0;
+
+}
+
+.chat-input-container button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+.message-list::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.message-list::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+.message-list::-webkit-scrollbar-thumb{
+
+    background:rgba(255,255,255,.2);
+
+    border-radius:50px;
+
+}
+
+.message-list::-webkit-scrollbar-thumb:hover{
+
+    background:rgba(255,255,255,.35);
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:768px){
+
+    .chat-box{
+
+        height:90vh;
+
+        padding:20px;
+
+    }
+
+    .chat-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+
+    }
+
+    .chat-input-container{
+
+        gap:10px;
+
+    }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:480px){
+
+    .chat-page{
+
+        padding:10px;
+
+    }
+
+    .chat-box{
+
+        height:95vh;
+
+        padding:16px;
+
+        border-radius:18px;
+
+    }
+
+    .chat-header h2{
+
+        font-size:1.45rem;
+
+    }
+
+    .chat-header span{
+
+        font-size:.82rem;
+
+    }
+
+    .chat-input-container{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .chat-input-container button{
+
+        width:100%;
+
+    }
+
+}

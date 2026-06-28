@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO Test</title>
+</head>
+<body>
+
+    <h2>Socket.IO Test</h2>
+
+    <button onclick="joinRoom()">Join Room</button>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+    <pre id="messages"></pre>
+
+    <script src="http://localhost:5001/socket.io/socket.io.js"></script>
+
+    <script>
+        const socket = io("http://localhost:5001");
+
+        socket.on("connect", () => {
+            console.log("Connected:", socket.id);
+        });
+
+        function joinRoom() {
+            socket.emit("joinRoom", "General");
+        }
+
+        function sendMessage() {
+
+            socket.emit("sendMessage", {
+                username: "Sahil",
+                room: "General",
+                message: "Hello from Browser!"
+            });
+
+        }
+
+        socket.on("receiveMessage", (data) => {
+            console.log("Received from server:", data);
+
+            document.getElementById("messages").textContent +=
+                `${data.username}: ${data.message}\n`;
+
+        });
+
+    </script>
+
+</body>
+</html>

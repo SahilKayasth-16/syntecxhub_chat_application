@@ -1,0 +1,141 @@
+/* ==========================================
+   Google Font
+========================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ==========================================
+   Reset
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:"Poppins",sans-serif;
+
+    color:var(--text);
+
+    background:
+        radial-gradient(circle at top left,#6D28D9 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#2563EB 0%,transparent 35%),
+        radial-gradient(circle at center,#1E1B4B 0%,transparent 60%),
+        var(--bg-color);
+
+    background-attachment:fixed;
+
+    overflow:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/* ==========================================
+   Root App
+========================================== */
+
+#root{
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   Typography
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+p{
+
+    color:var(--text-light);
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   Links
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================
+   Lists
+========================================== */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+   Images
+========================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+button{
+
+    font-family:inherit;
+
+}
+
+/* ==========================================
+   Selection
+========================================== */
+
+::selection{
+
+    background:rgba(139,92,246,.45);
+
+    color:#fff;
+
+}

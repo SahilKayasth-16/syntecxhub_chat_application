@@ -1,0 +1,197 @@
+/* ==========================================
+   Join Page
+========================================== */
+
+.join-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+/* ==========================================
+   Join Card
+========================================== */
+
+.join-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    padding:40px;
+
+    text-align:center;
+
+    animation:fadeUp .6s ease;
+
+}
+
+/* ==========================================
+   Heading
+========================================== */
+
+.join-card h1{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* ==========================================
+   Subtitle
+========================================== */
+
+.join-card p{
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   Form
+========================================== */
+
+.join-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================================
+   Inputs
+========================================== */
+
+.join-card input{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   Button
+========================================== */
+
+.join-card button{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:16px;
+
+    margin-top:6px;
+
+}
+
+/* ==========================================
+   Animation
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width:768px){
+
+    .join-card{
+
+        max-width:450px;
+
+        padding:35px;
+
+    }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:480px){
+
+    .join-page{
+
+        padding:15px;
+
+    }
+
+    .join-card{
+
+        padding:28px 22px;
+
+        gap:18px;
+
+        border-radius:18px;
+
+    }
+
+    .join-card h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .join-card p{
+
+        font-size:.9rem;
+
+    }
+
+}
