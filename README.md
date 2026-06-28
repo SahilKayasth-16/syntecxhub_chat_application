@@ -146,6 +146,11 @@ Returns all messages for a specific chat room.
 
 ---
 
+## URLS
+
+* Frontend: https://connectify-chats.vercel.app
+* Backend: https://syntecxhub-chat-application-ytvy.onrender.com
+
 ## 👨‍💻 Author
 
 **Sahil Kayasth**
