@@ -151,8 +151,8 @@ Returns all messages for a specific chat room.
 **Sahil Kayasth**
 
 * MERN Stack Developer
-* GitHub: https://github.com/your-username
-* LinkedIn: https://linkedin.com/in/your-profile
+* GitHub: https://github.com/SahilKayasth-16
+* LinkedIn: https://www.linkedin.com/in/sahil-kayasth-388bb2228/
 
 ---
 
