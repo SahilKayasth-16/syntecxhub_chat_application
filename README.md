@@ -133,18 +133,6 @@ Returns all messages for a specific chat room.
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots of the application here after deployment.
-
-Example:
-
-* Join Room Page
-* Chat Room
-* Mobile View
-
----
-
 ## 🔮 Future Improvements
 
 * User Authentication (JWT)
